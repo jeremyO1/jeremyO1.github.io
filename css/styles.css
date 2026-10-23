@@ -612,6 +612,17 @@ p {
   object-fit: cover;
 }
 
+.project-thumb svg {
+  width: 44px;
+  height: 44px;
+  opacity: 0.85;
+}
+
+.project-note {
+  font-size: 0.85rem;
+  color: var(--muted);
+}
+
 .project-thumb.v2 {
   background: linear-gradient(135deg, #1d2333 0%, var(--navy) 100%);
 }
@@ -843,6 +854,14 @@ p {
   margin: 0 0 18px;
   padding-left: 18px;
   color: var(--muted);
+}
+
+.timeline-card ul.tags {
+  padding-left: 0;
+}
+
+.timeline-card ul:last-child {
+  margin-bottom: 0;
 }
 
 .timeline-card li {

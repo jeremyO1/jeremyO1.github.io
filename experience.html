@@ -4,7 +4,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Experience | Jeremy Ockenden</title>
-  <meta name="description" content="Work experience and education timeline of Jeremy Ockenden.">
+  <meta name="description" content="Work experience, education and certifications of Jeremy Ockenden.">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Instrument+Serif:ital@1&display=swap" rel="stylesheet">
@@ -43,30 +43,44 @@
             <button class="filter-btn" data-filter="work">Work</button>
             <button class="filter-btn" data-filter="education">Education</button>
           </div>
-          <!-- Put your CV PDF in the images folder (or anywhere) and update this link -->
-          <a href="#" class="btn btn-secondary" download>
-            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4M7 10l5 5 5-5M12 15V3"/></svg>
-            Download CV
+          <!-- To offer a download instead: add your CV PDF to the site and use <a href="Jeremy-Ockenden-CV.pdf" download> -->
+          <a href="contact.html" class="btn btn-secondary">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><path d="M14 2v6h6M16 13H8M16 17H8"/></svg>
+            Request my CV
           </a>
         </div>
 
         <ol class="timeline" id="timeline">
+
+          <!-- ===== Certification entry template ===== -->
+          <li class="timeline-item reveal" data-type="education">
+            <span class="timeline-marker"></span>
+            <div class="timeline-card">
+              <div class="timeline-top">
+                <h3>AWS Certified Cloud Practitioner <span class="type-badge edu">Certification</span></h3>
+                <span class="timeline-date">Aug 2026</span>
+              </div>
+              <div class="timeline-org">Amazon Web Services</div>
+              <ul class="tags"><li class="tag">AWS</li><li class="tag">Cloud Computing</li></ul>
+            </div>
+          </li>
 
           <!-- ===== Work entry template: copy this block to add a job ===== -->
           <li class="timeline-item reveal" data-type="work">
             <span class="timeline-marker"></span>
             <div class="timeline-card">
               <div class="timeline-top">
-                <h3>Job Title <span class="type-badge">Work</span></h3>
-                <span class="timeline-date">Jan 2024 – Present</span>
+                <h3>Freelance Data Engineer <span class="type-badge">Work</span></h3>
+                <span class="timeline-date">Jul 2026 – Present</span>
               </div>
-              <div class="timeline-org">Company Name <span class="muted">· City, Country</span></div>
+              <div class="timeline-org">Code Magus</div>
               <ul>
-                <li>A key responsibility or achievement, ideally with a measurable result.</li>
-                <li>Another responsibility, project you led or technology you introduced.</li>
-                <li>A third point showing impact, teamwork or growth.</li>
+                <li>Conducted literature research and co-authored the project proposal evaluating Sentinel-2 multi-spectral satellite imagery as a geopolitical tool for tracking service delivery in South African metros.</li>
+                <li>Engineered scripts to automate bulk downloading, cleaning and preprocessing of high-resolution time-series satellite images into a date-structured server repository.</li>
+                <li>Trained and validated a Random Forest model on the preprocessed datasets to classify and evaluate urban service delivery patterns.</li>
+                <li>Currently drafting the research paper on the pipeline architecture, preprocessing methodology and model results.</li>
               </ul>
-              <ul class="tags"><li class="tag">Skill</li><li class="tag">Technology</li><li class="tag">Tool</li></ul>
+              <ul class="tags"><li class="tag">Python</li><li class="tag">Machine Learning</li><li class="tag">Data Pipelines</li><li class="tag">Research</li></ul>
             </div>
           </li>
           <!-- ===== End template ===== -->
@@ -75,15 +89,18 @@
             <span class="timeline-marker"></span>
             <div class="timeline-card">
               <div class="timeline-top">
-                <h3>Previous Job Title <span class="type-badge">Work</span></h3>
-                <span class="timeline-date">Jun 2022 – Dec 2023</span>
+                <h3>Freelance Data Engineer <span class="type-badge">Work</span></h3>
+                <span class="timeline-date">Oct 2024 – Apr 2025</span>
               </div>
-              <div class="timeline-org">Company Name <span class="muted">· City, Country</span></div>
+              <div class="timeline-org">Code Magus</div>
               <ul>
-                <li>A key responsibility or achievement, ideally with a measurable result.</li>
-                <li>Another responsibility, project you led or technology you introduced.</li>
+                <li>Designed and implemented a relational SQLite database centralising 20+ years of historical and real-time stock market data, replacing manual lookups with a proprietary data asset.</li>
+                <li>Engineered a migration script that processed and cleaned two decades of financial records while maintaining schema integrity.</li>
+                <li>Developed a Python ETL pipeline automating daily retrieval from financial APIs, ensuring 100% data continuity for daily market analysis.</li>
+                <li>Managed database maintenance and version control (CVS) in a Linux (Ubuntu) environment via VirtualBox.</li>
+                <li>Worked directly with the CEO to gather requirements, report progress and refine data outputs.</li>
               </ul>
-              <ul class="tags"><li class="tag">Skill</li><li class="tag">Technology</li></ul>
+              <ul class="tags"><li class="tag">Python</li><li class="tag">SQLite</li><li class="tag">ETL</li><li class="tag">Linux</li></ul>
             </div>
           </li>
 
@@ -92,14 +109,14 @@
             <span class="timeline-marker"></span>
             <div class="timeline-card">
               <div class="timeline-top">
-                <h3>BSc Degree Name <span class="type-badge edu">Education</span></h3>
-                <span class="timeline-date">Sep 2019 – Jun 2022</span>
+                <h3>BSc (Hons) Computer Science, 2:1 <span class="type-badge edu">Education</span></h3>
+                <span class="timeline-date">Oct 2021 – Jun 2024</span>
               </div>
-              <div class="timeline-org">University Name <span class="muted">· City, Country</span></div>
+              <div class="timeline-org">University of Bath <span class="muted">· Bath, UK</span></div>
               <ul>
-                <li>Grade / classification achieved.</li>
-                <li>Dissertation or final project: a short description.</li>
-                <li>Relevant modules, societies or awards.</li>
+                <li>Achieved 85% in Data Structures and Algorithms.</li>
+                <li>Achieved 79% in Principles of Programming.</li>
+                <li>Hackathon winner (£200 prize): co-designed a gamified hiring solution that replaces static CVs with cognitive-testing mini-games.</li>
               </ul>
             </div>
           </li>
@@ -108,13 +125,18 @@
             <span class="timeline-marker"></span>
             <div class="timeline-card">
               <div class="timeline-top">
-                <h3>Part-time / Internship Role <span class="type-badge">Work</span></h3>
-                <span class="timeline-date">Summer 2021</span>
+                <h3>Software Engineer Intern <span class="type-badge">Work</span></h3>
+                <span class="timeline-date">Jun 2023 – Sep 2023</span>
               </div>
-              <div class="timeline-org">Company Name <span class="muted">· City, Country</span></div>
+              <div class="timeline-org">Publicis Sapient</div>
               <ul>
-                <li>What you worked on and what you learned.</li>
+                <li>Developed a proof-of-concept AI-driven interface in Python and Flask, integrating the OpenAI API to translate CEO-level business requirements into dynamic ERP dashboard configurations.</li>
+                <li>Engineered backend logic to manage conversational state, using custom prompting so the chatbot accurately mapped user responses to data visualisation widgets.</li>
+                <li>Built responsive, modular dashboard widgets in JavaScript and React that interfaced with the Python backend.</li>
+                <li>Worked in an 8-person cross-functional squad using full Agile/Scrum ceremonies and Jira, with a GitHub branching and pull-request workflow.</li>
+                <li>Presented the project's architecture, challenges and business value to peers and senior stakeholders.</li>
               </ul>
+              <ul class="tags"><li class="tag">Python</li><li class="tag">Flask</li><li class="tag">OpenAI API</li><li class="tag">React</li><li class="tag">Agile</li></ul>
             </div>
           </li>
 
@@ -122,12 +144,13 @@
             <span class="timeline-marker"></span>
             <div class="timeline-card">
               <div class="timeline-top">
-                <h3>A-Levels / College <span class="type-badge edu">Education</span></h3>
-                <span class="timeline-date">2017 – 2019</span>
+                <h3>A-Levels &amp; GCSEs <span class="type-badge edu">Education</span></h3>
+                <span class="timeline-date">Sep 2014 – Jun 2021</span>
               </div>
-              <div class="timeline-org">School or College Name <span class="muted">· City, Country</span></div>
+              <div class="timeline-org">Whitgift School</div>
               <ul>
-                <li>Subjects and grades, e.g. Computer Science (A), Maths (A), Physics (B).</li>
+                <li>A-Levels: A* Computer Science, A* Maths, A Physics.</li>
+                <li>10 GCSEs at A*–B equivalent.</li>
               </ul>
             </div>
           </li>
@@ -141,13 +164,10 @@
     <div class="container footer-inner">
       <p>© <span id="year"></span> Jeremy Ockenden. All rights reserved.</p>
       <div class="socials">
-        <a href="https://github.com/your-username" aria-label="GitHub" target="_blank" rel="noopener">
+        <a href="https://github.com/jeremyO1" aria-label="GitHub" target="_blank" rel="noopener">
           <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 .5a12 12 0 0 0-3.8 23.4c.6.1.8-.3.8-.6v-2c-3.3.7-4-1.6-4-1.6-.6-1.4-1.4-1.8-1.4-1.8-1-.7.1-.7.1-.7 1.2.1 1.8 1.2 1.8 1.2 1 1.8 2.8 1.3 3.5 1 .1-.8.4-1.3.7-1.6-2.7-.3-5.5-1.3-5.5-5.9 0-1.3.5-2.4 1.2-3.2-.1-.3-.5-1.5.1-3.2 0 0 1-.3 3.3 1.2a11.5 11.5 0 0 1 6 0C17.3 4.6 18.3 5 18.3 5c.7 1.7.2 2.9.1 3.2.8.8 1.2 1.9 1.2 3.2 0 4.6-2.8 5.6-5.5 5.9.4.4.8 1.1.8 2.2v3.3c0 .3.2.7.8.6A12 12 0 0 0 12 .5z"/></svg>
         </a>
-        <a href="https://www.linkedin.com/in/your-profile" aria-label="LinkedIn" target="_blank" rel="noopener">
-          <svg viewBox="0 0 24 24" fill="currentColor"><path d="M20.4 20.5h-3.6v-5.6c0-1.3 0-3-1.8-3s-2.1 1.4-2.1 2.9v5.7H9.3V9h3.4v1.6h.1c.5-.9 1.6-1.8 3.4-1.8 3.6 0 4.3 2.4 4.3 5.5v6.2zM5.3 7.4a2.1 2.1 0 1 1 0-4.2 2.1 2.1 0 0 1 0 4.2zM7.1 20.5H3.5V9h3.6v11.5zM22.2 0H1.8C.8 0 0 .8 0 1.7v20.6c0 .9.8 1.7 1.8 1.7h20.4c1 0 1.8-.8 1.8-1.7V1.7C24 .8 23.2 0 22.2 0z"/></svg>
-        </a>
-        <a href="contact.html" aria-label="Contact">
+        <a href="mailto:jeremy.ockenden@hotmail.co.uk" aria-label="Email">
           <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="4" width="20" height="16" rx="2"/><path d="M22 6l-10 7L2 6"/></svg>
         </a>
       </div>
