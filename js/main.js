@@ -4,7 +4,7 @@
 
 // Paste your Formspree form ID here (e.g. "xyzabcd") to make the contact
 // form actually send emails. Sign up free at https://formspree.io
-const FORMSPREE_ID = "";
+const FORMSPREE_ID = "xzeepnnd";
 
 document.addEventListener("DOMContentLoaded", () => {
   setupNav();
