@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Projects | Jeremy Ockenden</title>
+  <meta name="description" content="Coding projects by Jeremy Ockenden.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Instrument+Serif:ital@1&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+
+  <header class="site-header">
+    <nav class="container nav" aria-label="Main">
+      <a href="index.html" class="logo"><span class="logo-mark">JO</span>Jeremy Ockenden</a>
+      <button class="nav-toggle" aria-label="Toggle menu" aria-expanded="false"><span></span></button>
+      <ul class="nav-links">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="projects.html">Projects</a></li>
+        <li><a href="experience.html">Experience</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="contact.html" class="nav-cta">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <section class="page-header">
+      <div class="container">
+        <span class="eyebrow">Portfolio</span>
+        <h1>Projects</h1>
+        <p>A collection of things I've built, from full applications to small tools and experiments. Each one links to its source code and, where available, a live demo.</p>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="container">
+        <!-- To add a category: add a button here, then put the same word in a card's data-type -->
+        <div class="filters" data-target="#project-grid" role="group" aria-label="Filter projects">
+          <button class="filter-btn active" data-filter="all">All</button>
+          <button class="filter-btn" data-filter="web">Web</button>
+          <button class="filter-btn" data-filter="python">Python</button>
+          <button class="filter-btn" data-filter="tools">Tools</button>
+        </div>
+
+        <div class="project-grid" id="project-grid">
+
+          <!-- ===== Project card template: copy this block to add a project ===== -->
+          <article class="project-card reveal" data-type="web">
+            <div class="project-thumb">
+              <!-- Replace with: <img src="images/project-1.png" alt="Screenshot of Project One"> -->
+              Screenshot
+            </div>
+            <div class="project-body">
+              <span class="project-type">Web App</span>
+              <h3>Project Name One</h3>
+              <p>A short summary of what the project does, who it's for and what you learned building it. Two or three sentences is ideal.</p>
+              <ul class="tags"><li class="tag">JavaScript</li><li class="tag">React</li><li class="tag">Node.js</li></ul>
+              <div class="project-links">
+                <a href="#" target="_blank" rel="noopener">
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M16 18l6-6-6-6M8 6l-6 6 6 6"/></svg>Code
+                </a>
+                <a href="#" target="_blank" rel="noopener">
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6M15 3h6v6M10 14L21 3"/></svg>Live demo
+                </a>
+              </div>
+            </div>
+          </article>
+          <!-- ===== End template ===== -->
+
+          <article class="project-card reveal" data-type="python">
+            <div class="project-thumb v2">Screenshot</div>
+            <div class="project-body">
+              <span class="project-type">Data Analysis</span>
+              <h3>Project Name Two</h3>
+              <p>A short summary of what the project does, who it's for and what you learned building it. Two or three sentences is ideal.</p>
+              <ul class="tags"><li class="tag">Python</li><li class="tag">Pandas</li><li class="tag">Matplotlib</li></ul>
+              <div class="project-links">
+                <a href="#" target="_blank" rel="noopener">
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M16 18l6-6-6-6M8 6l-6 6 6 6"/></svg>Code
+                </a>
+              </div>
+            </div>
+          </article>
+
+          <article class="project-card reveal" data-type="tools">
+            <div class="project-thumb v3">Screenshot</div>
+            <div class="project-body">
+              <span class="project-type">Desktop Tool</span>
+              <h3>Project Name Three</h3>
+              <p>A short summary of what the project does, who it's for and what you learned building it. Two or three sentences is ideal.</p>
+              <ul class="tags"><li class="tag">C#</li><li class="tag">.NET</li></ul>
+              <div class="project-links">
+                <a href="#" target="_blank" rel="noopener">
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M16 18l6-6-6-6M8 6l-6 6 6 6"/></svg>Code
+                </a>
+              </div>
+            </div>
+          </article>
+
+          <article class="project-card reveal" data-type="web">
+            <div class="project-thumb v2">Screenshot</div>
+            <div class="project-body">
+              <span class="project-type">Website</span>
+              <h3>Project Name Four</h3>
+              <p>A short summary of what the project does, who it's for and what you learned building it. Two or three sentences is ideal.</p>
+              <ul class="tags"><li class="tag">HTML</li><li class="tag">CSS</li><li class="tag">JavaScript</li></ul>
+              <div class="project-links">
+                <a href="#" target="_blank" rel="noopener">
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M16 18l6-6-6-6M8 6l-6 6 6 6"/></svg>Code
+                </a>
+                <a href="#" target="_blank" rel="noopener">
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6M15 3h6v6M10 14L21 3"/></svg>Live demo
+                </a>
+              </div>
+            </div>
+          </article>
+
+          <article class="project-card reveal" data-type="python tools">
+            <div class="project-thumb v3">Screenshot</div>
+            <div class="project-body">
+              <span class="project-type">Automation</span>
+              <h3>Project Name Five</h3>
+              <p>A short summary of what the project does, who it's for and what you learned building it. Two or three sentences is ideal.</p>
+              <ul class="tags"><li class="tag">Python</li><li class="tag">CLI</li></ul>
+              <div class="project-links">
+                <a href="#" target="_blank" rel="noopener">
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M16 18l6-6-6-6M8 6l-6 6 6 6"/></svg>Code
+                </a>
+              </div>
+            </div>
+          </article>
+
+          <article class="project-card reveal" data-type="web python">
+            <div class="project-thumb">Screenshot</div>
+            <div class="project-body">
+              <span class="project-type">Full Stack</span>
+              <h3>Project Name Six</h3>
+              <p>A short summary of what the project does, who it's for and what you learned building it. Two or three sentences is ideal.</p>
+              <ul class="tags"><li class="tag">Flask</li><li class="tag">SQL</li><li class="tag">JavaScript</li></ul>
+              <div class="project-links">
+                <a href="#" target="_blank" rel="noopener">
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M16 18l6-6-6-6M8 6l-6 6 6 6"/></svg>Code
+                </a>
+                <a href="#" target="_blank" rel="noopener">
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6M15 3h6v6M10 14L21 3"/></svg>Live demo
+                </a>
+              </div>
+            </div>
+          </article>
+
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <p>© <span id="year"></span> Jeremy Ockenden. All rights reserved.</p>
+      <div class="socials">
+        <a href="https://github.com/your-username" aria-label="GitHub" target="_blank" rel="noopener">
+          <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 .5a12 12 0 0 0-3.8 23.4c.6.1.8-.3.8-.6v-2c-3.3.7-4-1.6-4-1.6-.6-1.4-1.4-1.8-1.4-1.8-1-.7.1-.7.1-.7 1.2.1 1.8 1.2 1.8 1.2 1 1.8 2.8 1.3 3.5 1 .1-.8.4-1.3.7-1.6-2.7-.3-5.5-1.3-5.5-5.9 0-1.3.5-2.4 1.2-3.2-.1-.3-.5-1.5.1-3.2 0 0 1-.3 3.3 1.2a11.5 11.5 0 0 1 6 0C17.3 4.6 18.3 5 18.3 5c.7 1.7.2 2.9.1 3.2.8.8 1.2 1.9 1.2 3.2 0 4.6-2.8 5.6-5.5 5.9.4.4.8 1.1.8 2.2v3.3c0 .3.2.7.8.6A12 12 0 0 0 12 .5z"/></svg>
+        </a>
+        <a href="https://www.linkedin.com/in/your-profile" aria-label="LinkedIn" target="_blank" rel="noopener">
+          <svg viewBox="0 0 24 24" fill="currentColor"><path d="M20.4 20.5h-3.6v-5.6c0-1.3 0-3-1.8-3s-2.1 1.4-2.1 2.9v5.7H9.3V9h3.4v1.6h.1c.5-.9 1.6-1.8 3.4-1.8 3.6 0 4.3 2.4 4.3 5.5v6.2zM5.3 7.4a2.1 2.1 0 1 1 0-4.2 2.1 2.1 0 0 1 0 4.2zM7.1 20.5H3.5V9h3.6v11.5zM22.2 0H1.8C.8 0 0 .8 0 1.7v20.6c0 .9.8 1.7 1.8 1.7h20.4c1 0 1.8-.8 1.8-1.7V1.7C24 .8 23.2 0 22.2 0z"/></svg>
+        </a>
+        <a href="contact.html" aria-label="Contact">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="4" width="20" height="16" rx="2"/><path d="M22 6l-10 7L2 6"/></svg>
+        </a>
+      </div>
+    </div>
+  </footer>
+
+  <script src="js/main.js"></script>
+</body>
+</html>
