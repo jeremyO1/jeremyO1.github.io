@@ -20,10 +20,23 @@ function setupNav() {
   const header = document.querySelector(".site-header");
   const toggle = document.querySelector(".nav-toggle");
 
+  // Links use clean URLs ("projects", "/") which GitHub Pages resolves to
+  // the .html files. When previewing locally, point them at the files instead.
+  const isLocal =
+    location.protocol === "file:" || ["localhost", "127.0.0.1"].includes(location.hostname);
+  const pageName = (href) => href.replace(/\.html$/, "").replace(/^\/$/, "") || "index";
+
+  if (isLocal) {
+    document.querySelectorAll('a[href]:not([href*=":"]):not([href^="#"])').forEach((link) => {
+      const href = link.getAttribute("href");
+      if (!/\.\w+$/.test(href)) link.setAttribute("href", pageName(href) + ".html");
+    });
+  }
+
   // Highlight the link for the current page
-  const page = location.pathname.split("/").pop() || "index.html";
+  const page = pageName(location.pathname.split("/").pop());
   document.querySelectorAll(".nav-links a").forEach((link) => {
-    if (link.getAttribute("href") === page) {
+    if (pageName(link.getAttribute("href")) === page) {
       link.classList.add("active");
       link.setAttribute("aria-current", "page");
     }
