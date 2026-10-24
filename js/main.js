@@ -31,6 +31,10 @@ function setupNav() {
       const href = link.getAttribute("href");
       if (!/\.\w+$/.test(href)) link.setAttribute("href", pageName(href) + ".html");
     });
+  } else if (/\.html$/.test(location.pathname)) {
+    // Arrived via an old .html link or a cached page: tidy the address bar
+    const clean = location.pathname.replace(/(index)?\.html$/, "");
+    history.replaceState(null, "", clean + location.search + location.hash);
   }
 
   // Highlight the link for the current page
